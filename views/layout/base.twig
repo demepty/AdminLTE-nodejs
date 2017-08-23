@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ {% include "layout/header.twig" %}
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+        <div class="wrapper">
+            {% include "layout/navigation.twig" %}
+            {% include "layout/sidebar.twig" %}
+
+        <div class="content-wrapper">
+                    {% block content %}
+                        
+                    {% endblock content %}
+        </div>
+            {% include "layout/footer.twig" %}
+        </div>
+            {% include "layout/js.twig" %}
+    
+</body>
+</html>
